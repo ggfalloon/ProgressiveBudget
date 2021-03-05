@@ -22,6 +22,7 @@ const config = {
             },
         ],
     },
+    mode: "development",
     plugins: [
         new WebpackPwaManifest({
             fingerprints: false,
