@@ -20,16 +20,19 @@ request.onsuccess = (event) => {
     }
 };
 
+// console logs in case the request for opening a transaction is not successful.
 request.onerror = (event) => {
-    console.log("Your browser is not supporting a stable version of use offline. " + event.target.errorCode);
-}
+    console.log("Your browser is not supporting a stable version of IndexedDB for use offline. " + event.target.errorCode);
+};
 
+// Saves to the pending database
 function saveRecord(record) {
     const transaction = db.transaction(["pending"], "readwrite");
     const store = transaction.objectStore("pending");
     store.add(record);
 }
 
+// When database is back online, gets all records from the pending store and adds them to the online db.
 function checkDatabase() {
     const transaction = db.transaction(["pending"], "readwrite");
     const store = transaction.objectStore("pending");
