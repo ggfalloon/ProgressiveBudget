@@ -1,7 +1,7 @@
 # ProgressiveBudget
 
 ## Description
-Access this budget tracker on or offline and while you are on the go to keep up with spending and deposits.
+Access the budget tracker progressive web application on or offline. keep up with spending and deposits while you are on the go.
 
 ## Table of Contents
 
@@ -18,6 +18,8 @@ Access this budget tracker on or offline and while you are on the go to keep up 
 * Node.js (Express, Mongoose, Morgan)
 * MongoDB, MongoDB Atlas
 * Heroku
+* Babel.js
+* Webpack.js
 
 ## Usage
 
