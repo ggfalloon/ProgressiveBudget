@@ -1,16 +1,17 @@
+// declares a new database for holding budget database info in IndexedDB storage.
 let db;
 const request = window.indexedDB.open("budget", 1);
 
-// Create schema
+// Handles the event for a higher version than the stored database.
 request.onupgradeneeded = event => {
     const db = event.target.result;
-    // Creates an object store with a listID keypath that can be used to query on.
+    // Creates an object store that auto increments each transaction.
     db.createObjectStore("pending", {
         autoIncrement: true
     });
 };
 
-// Opens a transaction, accesses the toDoList objectStore and statusIndex.
+// Opens a transaction and checks that the database is online.
 request.onsuccess = (event) => {
     db = event.target.result;
 
@@ -18,6 +19,10 @@ request.onsuccess = (event) => {
         checkDatabase();
     }
 };
+
+request.onerror = (event) => {
+    console.log("Your browser is not supporting a stable version of use offline. " + event.target.errorCode);
+}
 
 function saveRecord(record) {
     const transaction = db.transaction(["pending"], "readwrite");
