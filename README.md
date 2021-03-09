@@ -1,7 +1,7 @@
 # ProgressiveBudget
 
 ## Description
-Access the budget tracker progressive web application on or offline. keep up with spending and deposits while you are on the go.
+Access the budget tracker progressive web application on or offline. Keep up with spending and deposits while you are on the go.
 
 ## Table of Contents
 
