@@ -29,9 +29,9 @@ Enter the name of your transaction and the transaction amount. Click the button 
 
 ## Resources
 
-* 
-* 
-* 
+* developer.mozilla.org
+* webpack.js.org
+* heroku.com
 
 ## Contributing
 
