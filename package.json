@@ -1,13 +1,15 @@
 {
   "name": "budget-app",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.15.1"
+  },
   "description": "budget tracker",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "lite-server": "lite-server",
-    "heroku-postbuild": "webpack -p"
+    "lite-server": "lite-server"
   },
   "repository": {
     "type": "git",
