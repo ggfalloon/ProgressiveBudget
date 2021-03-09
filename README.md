@@ -23,7 +23,9 @@ Access the budget tracker progressive web application on or offline. keep up wit
 
 ## Usage
 
-URL - 
+URL - https://sheltered-journey-74875.herokuapp.com/
+
+Enter the name of your transaction and the transaction amount. Click the button "+Add Funds" if the transaction is adding funds to your account. Click the button "-Subtract Funds" if the transaction is taking funds out of your account. Check the graph to see how the transactions have flowed over time. No internet connection, no worries. You can add or take away funds and your items will be saved and visible to you both online and offline.
 
 ## Resources
 
