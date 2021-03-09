@@ -1,7 +1,7 @@
 # ProgressiveBudget
 
 ## Description
-Access the budget tracker progressive web application on or offline. keep up with spending and deposits while you are on the go.
+Access the budget tracker progressive web application on or offline. Keep up with spending and deposits while you are on the go.
 
 ## Table of Contents
 
@@ -24,6 +24,8 @@ Access the budget tracker progressive web application on or offline. keep up wit
 ## Usage
 
 URL - https://sheltered-journey-74875.herokuapp.com/
+
+![screencapture-localhost-3000-2021-03-08-16_41_15](https://user-images.githubusercontent.com/71281652/110511289-b1850a00-80c9-11eb-9dab-874124e9b71f.png)
 
 Enter the name of your transaction and the transaction amount. Click the button "+Add Funds" if the transaction is adding funds to your account. Click the button "-Subtract Funds" if the transaction is taking funds out of your account. Check the graph to see how the transactions have flowed over time. No internet connection, no worries. You can add or take away funds and your items will be saved and visible to you both online and offline.
 
