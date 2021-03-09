@@ -1,6 +1,3 @@
-// Trying dynamic indexeddb
-// importScripts("/idb.js");
-
 
 const FILES_TO_CACHE = [
     "/",

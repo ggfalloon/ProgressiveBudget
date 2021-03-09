@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "node server.js",
+    "build": "npm run build",
+    "start": "webpack -d | node server.js",
     "lite-server": "lite-server"
   },
   "repository": {
