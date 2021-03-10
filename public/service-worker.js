@@ -1,7 +1,7 @@
-
 const FILES_TO_CACHE = [
     "/",
     "/index.html",
+    "/db.js"
     "/index.js",
     "/styles.css",
     "/dist/bundle.js",
@@ -17,7 +17,7 @@ self.addEventListener("install", event => {
         caches
             .open(STATIC_CACHE)
             .then(cache => cache.addAll(FILES_TO_CACHE))
-            .then(() => self.skipWaiting())
+            .then(self.skipWaiting())
     );
 });
 
