@@ -19,7 +19,7 @@ mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/budget",
   {
     useNewUrlParser: true,
-    useUnifiedTopology: false,
+    useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false
   });
